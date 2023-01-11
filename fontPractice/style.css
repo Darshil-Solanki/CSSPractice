@@ -1,0 +1,69 @@
+.normal{
+ font-style:normal
+}
+.italic{
+ font-style:italic;
+}
+.oblique{
+ font-style:oblique;
+}
+/* there are two type of font-family:generic(group of family) and specific*/
+.serif{
+	font-family:serif,"Times New Roman";
+}
+.sansserif{
+	font-family:sansserif,Arial;
+}
+.monospace{
+	font-family:monospace,Courier;
+}
+.cursive{
+	font-family: cursive,Florence;	
+}
+.fantasy{
+	font-family: fantasy,Blippo;
+}
+/* you can also specify in px or em. em=pixels/16 ,1em==16pixels */
+.small{
+	font-size:small;
+}
+.medium{
+	font-size:medium;
+}
+.large{
+	font-size:large;
+}
+.xlarge{
+	font-size:x-large;
+}
+/*custom boldness can be specified in 100-1000*/
+.lighter{
+	font-weight:lighter;
+}
+.bold{
+	font-weight:bold;
+}
+.bolder{
+	font-weight:bolder;
+}
+.customBold{
+	font-weight:700;
+}
+.normal{
+	font-variant:normal;
+}
+.smallcaps{
+	font-variant:small-caps;
+}
+.left{
+	text-align:left;
+}
+.right{
+	text-align:right;
+}
+.center{
+	text-align:center;
+}
+.justify{
+	text-align:justify;
+}
