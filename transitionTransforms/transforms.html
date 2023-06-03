@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+	<head>
+		<title>Transforms</title>
+	</head>
+	<style>
+		#rotate{
+		   width: 200px;
+		   height: 100px;
+		   margin-top: 30px;
+		   background-color: #6bc8f5;
+		   transform: rotate(20deg);
+		}
+		div.empty-div {
+		   position: relative;
+		   height: 100px;
+		   width: 100px;
+		   margin: 30px;
+		   padding: 10px;
+		   border: 1px solid black;
+		}
+		div.rmove-div {
+		   padding: 50px;
+		   position: absolute;
+		   background-color: #6bc8f5;
+		   border: 1px solid white;
+		   transform: rotate(15deg);
+		   transform-origin: 25% 75%;
+		   
+		 
+		}
+		div.scale1{
+			margin:	auto;
+			width:160px;
+			height:100px;
+			background-color:#6bc8f5;
+			transform:scale(0.8,0.8);
+		}
+		div.scale2{
+			margin:	auto;
+			width:160px;
+			height:100px;
+			background-color:#6bc8f5;
+			transform:scale(1.2,1.2);
+		}
+		div.translate{
+			width:150px;
+			height:150px;
+			background-color:#6bc8f5;
+			transform:translate(150px,100px);
+		   /*The origin of the x-axis (horizontal) is set to 25% from the left. 
+		   The origin for the y-axis (vertical) is set to 75% from above.
+		   The default value for the property is 50% 50%,
+		   which corresponds to the center of the element.
+		   
+		   The scale() method increases or decreases the size of an element,
+		   according to the parameters given for the width and height. 
+		   1 stands for the original size, 2 for twice the original size, and so on. 
+		   */
+		}
+	</style>
+	<body>
+		<p>CSS transforms allow you to translate, rotate, scale, and skew elements.
+A transformation is an effect that lets an element change shape, size, and position.</p>
+		<div id="rotate">transform:rotate(20deg) &nbsp; can also take -ve value</div>
+		<div class="empty-div">
+			<div class="rmove-div"></div>
+		</div>
+		<div class="translate">transform: translate(150px, 100px); &nbsp; Move(translate) to 150px right,100px down </div>
+		<div class="scale1">transform:scale(0.8,0.8);</div>
+		<div class="scale2">transform:scale(1.2,1.2); </div>
+	</body>
+</html>
