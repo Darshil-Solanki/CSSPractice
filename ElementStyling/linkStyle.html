@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Styling Link</title>
+		<style>
+			li{
+				display:inline;
+			}
+			a {
+			  outline: none;/* can create a border*/
+			  text-decoration: none;
+			  display: inline-block;
+			  margin-left: 1%;
+			  text-align: center;
+			  padding: 10px;
+			  box-sizing: border-box;
+			  width: 31%;
+			  color: white;
+			  background-color: black;
+			}
+			a:hover {
+			  background: gray;
+			}
+		</style>
+		<!-- 
+		a:link - defines the style for normal unvisited links.
+		a:visited - defines the style for visited links.
+		a:active - a link becomes active once you click on it.
+		a:hover - a link is hovered when the mouse is over it. -->
+	</head>
+	<body>
+		<p>Links styles as btn</p>
+		<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Contact</a></li>
+		</ul>
+	</body>
+</html>

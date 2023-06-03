@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Styling Form</title>
+		<style>
+			input[type='text'], input[type='email'] {
+				border:1px solid green;
+				width:70%;
+				padding: 5px;
+				border-radius: 20px;
+			}
+			label,p{
+				font-weight: bold;
+				color:green;
+			}
+			input[type='button'] {
+				background-color: green;
+				border: none;
+				border-radius: 20px;
+				padding: 10px 20px;/*similar to padding:10px 20px 10px 20px*/
+				font-weight: bold;
+				color: white;
+			}
+			input[type='button']:hover {
+			  background-color: gray;
+			}
+		</style>
+	</head>
+	<body>
+		<p>Form demo</p>
+		<form>
+		  <label for="name">Name: </label>
+		  <input type="text" id="name" placeholder="Your name"> 
+		  <br><br>
+		  <label for="email">Email: </label>
+		  <input type="email" id="email" placeholder="Your email">
+		  <br><br>
+		  <input type="button" value="Send">
+		</form>
+	</body>
+</html>

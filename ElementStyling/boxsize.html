@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Box Sizing</title>
+		<style>
+			.box1 {
+			  border: 3px solid red;
+			  padding: 10px 10px 10px 10px;
+			  margin: 5px 5px 5px 5px;
+			  width: 200px;
+			  height: 100px;
+			}
+			.box2 {
+			  border: 3px solid red;
+			  padding: 10px 10px 10px 10px;
+			  margin: 5px 5px 5px 5px;
+			  width: 200px;
+			  height: 100px;
+			  box-sizing: border-box;
+			} 
+		</style>
+	</head>
+	<body>
+		<p>Box Sizing demo</p>
+		<div class="box1">Box 1 <br/>
+			border: 3px solid red;&nbsp;
+			padding: 10px 10px 10px 10px;&nbsp;
+			margin: 5px 5px 5px 5px;&nbsp;
+			width: 200px;&nbsp;
+			height: 100px;&nbsp;
+		</div>
+		<div class="box2">Box 2<br/>
+			with box-sizing: border-box;
+		</div>
+	</body>
+</html>
