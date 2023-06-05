@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+	<head>
+		<title>Animations</title>
+	</head>
+	<style>
+		div{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			animation-name: colorchange;
+			animation-duration: 3s;
+			animation-timing-function: ease-in-out;/*same as transition-timing-function*/
+			animation-delay:2s;
+			animation-iteration-count :1;/*use infinite for endless animation*/
+			animation-direction:normal;
+			/*can be written like this:
+			animation: colorchange 3s ease-in-out 2s 1 normal;
+			*/
+		}
+		@keyframes colorchange {
+			0% {background-color: orange; }
+			50% {background-color: white; }
+			100% {background-color: green; }
+		}
+		/*from is a starting offset of 0%
+		to is an ending offset of 100%*/
+	</style>
+	<body>
+		<p>With animations, you can change as many CSS properties as you want to,
+		as many times you want to.</p>
+		<p>An animation is defined using keyframes.</p>
+		<p>
+		normal - the default value, which means it plays forward from 0 % to 100%. 
+		reverse - plays the keyframe in an opposite direction from 100 % to 0%
+		alternate - the animation first runs forward, then backward, then forward.
+		alternate-reverse - the animation first runs backward, then forward, then backward.
+		</p>
+		<div></div>
+	</body>
+</html>

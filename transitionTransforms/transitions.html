@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+	<head>
+		<title>Transitions</title>
+	</head>
+	<style>
+		div.first{
+		   width: 100px;
+		   height: 100px;
+		   background: #6bc8f5;
+		   transition: width 2s;
+		   transition-timing-function: ease-in;/*Same as transition:width 3s ease-in;*/
+		}
+		div.first:hover {
+		   width: 200px;
+		}
+		div.second{
+		   width: 100px;
+		   height: 100px;
+		   background: #6bc8f5;
+		   transition: transform 2s ease-in-out;
+		}
+		div.second:hover {
+		   transform: rotate(360deg);
+		}
+	</style>
+	<body>
+		<p>CSS transitions allow you to change from one property value to another over a given duration.</p>
+		<p>ease - the animation starts slowly, then accelerates quickly.<br/>
+		ease-in - starts slowly, then accelerates, and stops abruptly.<br/>
+		ease-out - starts quickly, but decelerates to a stop.<br/>
+		ease-in-out - similar to ease, but with more subtle acceleration and deceleration.<br/>
+		linear - constant speed throughout the animation; often best for color or opacity changes.</p>
+		<div class="first">Hover over here</div>
+		<div class="second">transition: transform 2s ease-in-out;</div>
+	</body>
+</html>
